@@ -57,15 +57,24 @@
                                     <constraint firstAttribute="width" constant="374" id="nK8-ax-542"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="yae-5n-hDb">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fh4-jZ-1dE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="shm-j2-D4C" firstAttribute="centerY" secondItem="k2N-Cj-Mvb" secondAttribute="centerY" id="clt-in-UX6"/>
+                            <constraint firstItem="yae-5n-hDb" firstAttribute="centerY" secondItem="shm-j2-D4C" secondAttribute="centerY" id="lf5-az-QFy"/>
                             <constraint firstItem="shm-j2-D4C" firstAttribute="centerX" secondItem="k2N-Cj-Mvb" secondAttribute="centerX" id="m36-vy-eWo"/>
+                            <constraint firstItem="yae-5n-hDb" firstAttribute="centerX" secondItem="shm-j2-D4C" secondAttribute="centerX" id="ue9-kN-9jR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GYp-CO-Hxz"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="yae-5n-hDb" id="CAj-95-wQp"/>
+                        <outlet property="imageView" destination="shm-j2-D4C" id="N3h-Ux-877"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNG-tJ-yd1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
